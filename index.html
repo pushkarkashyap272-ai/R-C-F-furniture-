@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171817">
+  <meta name="description" content="Explore RCF furniture collections. Manufacturer and wholesaler serving retail customers and shopkeepers in Saharanpur.">
+  <title>RCF Furniture | Designed for Better Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">Furniture manufacturer & wholesaler · Retail and bulk enquiries welcome</div>
+  <header class="header">
+    <a class="logo" href="#"><span class="logo-mark">RCF</span><span class="logo-sub">FURNITURE</span></a>
+    <nav class="desktop-nav"><a href="#collections">Collections</a><a href="#about">About RCF</a><a href="#wholesale">Wholesale</a><a href="#contact">Contact</a></nav>
+    <div class="header-actions"><button class="cart-trigger" id="openCart">Enquiry Cart <span id="cartCount">0</span></button><button class="menu-trigger" id="menuTrigger" aria-label="Open menu">☰</button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Crafted for your space</p>
+        <h1>Furniture that makes<br><em>every space</em> feel special.</h1>
+        <p class="hero-intro">Discover thoughtfully designed furniture for homes, offices and retail projects. Explore the collection and enquire directly with RCF.</p>
+        <div class="hero-buttons"><a class="btn btn-light" href="#collections">Explore collection <span>↗</span></a><button class="btn btn-outline-light" data-wa="Hello RCF, I would like to enquire about your furniture collection.">Talk to RCF</button></div>
+        <div class="hero-note">SAHARANPUR · MANUFACTURER & WHOLESALER</div>
+      </div>
+      <div class="hero-image"><div class="hero-image-label">THE RCF COLLECTION <span>01 / 08</span></div></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div><p class="eyebrow">A considered collection</p><h2>Made to live with.<br><em>Designed to stand out.</em></h2></div>
+      <p class="intro-text">From statement tables to everyday essentials, browse furniture selected for style, function and lasting appeal. Retail customers and dealers can both connect with our team for product details and quotations.</p>
+    </section>
+
+    <section class="collections section-wrap" id="collections">
+      <div class="section-heading"><div><p class="eyebrow">Find your fit</p><h2>Explore furniture</h2></div><p class="muted">Select a product to view details or add it to your enquiry list.</p></div>
+      <div class="filters" id="filters"></div>
+      <div class="catalog-tools"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search furniture..."></label><select id="sortSelect" aria-label="Sort products"><option value="featured">Featured first</option><option value="az">Name: A to Z</option></select></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="catalog-note">Product photographs shown are illustrative demo images. Confirm actual design, finish, dimensions and availability with RCF.</p>
+    </section>
+
+    <section class="wholesale" id="wholesale">
+      <div class="wholesale-image"></div>
+      <div class="wholesale-copy"><p class="eyebrow">For retailers & trade buyers</p><h2>One partner.<br><em>Many possibilities.</em></h2><p>RCF works as a furniture manufacturer and wholesaler. Shopkeepers, dealers and bulk buyers can contact us for product details, bulk requirements and quotations.</p><button class="btn btn-dark" data-wa="Hello RCF, I am a shopkeeper/dealer and would like to enquire about wholesale furniture and bulk orders.">Enquire for wholesale <span>↗</span></button></div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <p class="eyebrow">The RCF approach</p><h2>Furniture for the way<br><em>you live and work.</em></h2>
+      <div class="about-bottom"><p>Based in Khanalampura, Saharanpur, RCF serves both individual customers and trade buyers. Get in touch to discuss the furniture you need.</p><div class="values"><div><b>01</b><span>Furniture collection</span></div><div><b>02</b><span>Manufacturer & wholesaler</span></div><div><b>03</b><span>Retail & bulk enquiries</span></div></div></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner"><div><p class="eyebrow">Let's talk furniture</p><h2>Have a product in mind?</h2><p>Ask about designs, dimensions, finishes, availability or wholesale requirements.</p></div><button class="btn btn-light" data-wa="Hello RCF, I would like to enquire about furniture. Please share the details.">Start WhatsApp enquiry ↗</button></div>
+      <div class="contact-details">
+        <div><span class="detail-label">VISIT US</span><p>Dehradun Road, Khanalampura,<br>Saharanpur, Uttar Pradesh 247001</p></div>
+        <div><span class="detail-label">CALL / WHATSAPP</span><p><a href="tel:+919084535529">+91 90845 35529</a></p></div>
+        <div><span class="detail-label">EMAIL</span><p><a href="mailto:digitalcafe000@gmail.com">digitalcafe000@gmail.com</a></p></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="logo footer-logo" href="#"><span class="logo-mark">RCF</span><span class="logo-sub">FURNITURE</span></a><span>© <span id="year"></span> RCF Furniture. All rights reserved.</span><a href="#top">Back to top ↑</a></footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Enquiry cart">
+    <div class="cart-head"><div><p class="eyebrow">Your selection</p><h3>Enquiry cart</h3></div><button class="close-btn" id="closeCart" aria-label="Close cart">×</button></div>
+    <p class="cart-explainer">Add products you are interested in, then send the list to RCF on WhatsApp. Prices are shared on enquiry.</p>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom"><label for="buyerType">I am enquiring as</label><select id="buyerType"><option>Retail customer</option><option>Shopkeeper / Dealer</option><option>Bulk buyer</option></select><button class="btn btn-dark full" id="sendCart">Send enquiry on WhatsApp ↗</button></div>
+  </aside>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true">
+    <div class="modal-card"><button class="close-btn modal-close" id="closeModal" aria-label="Close">×</button><img id="modalImage" alt=""><div class="modal-content"><p class="eyebrow" id="modalCategory"></p><h3 id="modalName"></h3><p id="modalDescription"></p><p class="price-enquiry">Price on WhatsApp enquiry</p><button class="btn btn-dark full" id="modalAdd">Add to enquiry cart</button></div></div>
+  </div>
+  <script src="products.js"></script><script src="script.js"></script>
+</body>
+</html>
